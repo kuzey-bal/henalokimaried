@@ -20,7 +20,7 @@ function handleYes() {
     document.querySelector('h1').textContent = "EVET! TEŞEKKÜR EDERİM!";
     document.querySelector('h2').style.display = 'none';
     document.querySelector('p').textContent = "Bu, hayatımın en mutlu günü!";
-    document.querySelector('.buttons').innerHTML = <p style="font-size: 1.5em; color: #d81b60;">Sonsuza dek seninim!</p>;
+    document.querySelector('.buttons').inner = <p style="font-size: 1.5em; color: #d81b60;">Sonsuza dek seninim!</p>;
 
     // 3. Konfeti Patlatma (Basit bir JS konfeti kütüphanesi kullanılabilir. Örn: confetti.js)
     // Eğer kütüphane kullanmazsanız, bu kısmı basit bir animasyonla değiştirebilirsiniz.
@@ -59,4 +59,5 @@ function handleNo() {
         yesButton.style.backgroundColor = '#ffc107'; // Sarı renk
         alert("O buton çalışmıyor Hena, sadece bir seçenek var!");
     }
+
 }

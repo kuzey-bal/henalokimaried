@@ -1,20 +1,11 @@
 const yesButton = document.getElementById('yesButton');
 const noButton = document.getElementById('noButton');
-const music = document.getElementById('romanticMusic');
 
-// Müziği manuel olarak başlatma uyarısı (tarayıcı kısıtlamaları nedeniyle)
-document.addEventListener('DOMContentLoaded', () => {
-    alert("Hena, teklifi görmeden önce romantik müziği başlatmayı unutma! (Lütfen manuel oynat)");
-    // Genellikle tarayıcılar otomatik oynatmayı engeller, bu yüzden bir uyarı/düğme ile başlatılması gerekir.
-});
+
 
 
 // --- EVET Butonu İşlevi (Konfeti Patlatma) ---
 function handleYes() {
-    // 1. Müziği durdur/değiştir
-    music.pause();
-    //music.src = 'kutlama_sarkisi.mp3'; // İsteğe bağlı: Farklı bir şarkı çal
-    //music.play();
     
     // 2. Butonları ve metni değiştir
     document.querySelector('h1').textContent = "EVET! TEŞEKKÜR EDERİM!";
@@ -61,3 +52,4 @@ function handleNo() {
     }
 
 }
+

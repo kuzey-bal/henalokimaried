@@ -1,0 +1,48 @@
+body {
+    background-color: #fce4ec; /* Açık pembe arka plan */
+    color: #880e4f; /* Koyu mor/pembe yazı rengi */
+    font-family: 'Georgia', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Konfeti için önemli */
+}
+
+.container {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Yarı saydam beyaz kutu */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Diğer elementlerin (konfeti) üstünde kalması için */
+}
+
+h1, h2 {
+    color: #d81b60; /* Daha canlı pembe tonu */
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#yesButton {
+    background-color: #4caf50; /* Yeşil */
+    color: white;
+}
+
+#noButton {
+    background-color: #f44336; /* Kırmızı */
+    color: white;
+}
